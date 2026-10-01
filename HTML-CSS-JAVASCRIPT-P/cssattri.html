@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: rgb(34, 0, 255);
+
+        }
+
+        .yellow {
+            color: yellow;
+
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        [data-x=a] {
+            color: brown;
+        }
+
+        .red:hover {
+            background-color: red !important;
+        }
+
+        .box {
+            /*this is a box sizing */
+            width: 80vw;
+            margin: auto;
+            height: 30px;
+            box-sizing: border-box;
+            background-color: lightgoldenrodyellow;
+            border: 2px solid black;
+        }
+
+        .box2 {
+            width: 70vw;
+            height: 20vw;
+            margin: 20px auto;
+            box-sizing: border-box;
+            border: 2px solid red;
+            background-color: greenyellow;
+        }
+
+        .box3 {
+            width: 90vw;
+            height: 10em;
+            background-color: aqua;
+            box-sizing: border-box;
+
+
+        }
+
+        .box3,
+        p {
+            font-size: 2em;
+            overflow: scroll;
+            width: 50%;
+            border: 2px solid red;
+        }
+
+        div {
+            width: 100vh;
+            height: 20vh;
+            background-color: chartreuse;
+            border: 3px solid black;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="yellow red green" data-x="a">
+        this file is compare class and other attribute style
+    </h1>
+
+    <!--this line after code is a size attribute code -->
+    <div class="box"> this is a box</div>
+    <div class="box2">this is a second box</div>
+    <div class="box3">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos consectetur consequatur eius
+            similique
+            autem porro officiis. Veritatis facere nesciunt eius necessitatibus illum, omnis sapiente modi quis beatae
+            similique officiis facilis numquam fugiat recusandae deserunt soluta animi quasi. Ipsum ea nobis deserunt
+            accusantium recusandae rem perferendis amet minus enim! Voluptates!
+        </p>
+
+    </div>
+    <div>
+        this is last div
+    </div>
+</body>
+
+</html>

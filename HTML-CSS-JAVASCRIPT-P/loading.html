@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loder {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 5px solid rgb(222, 220, 220);
+            border-top-color: red;
+            animation: rotate 1s infinite;
+
+
+        }
+
+        .loder:hover {
+            border-top-color: yellow;
+            background-color: green;
+        }
+
+        @keyframes rotate {
+            100% {
+                rotate: 360deg;
+            }
+
+        }
+
+        button {
+
+            align-items: center;
+        }
+
+        .pick {
+            width: 9em;
+            height: 3em;
+            border-radius: 3em;
+            font-size: 15px;
+            font-family: inherit;
+            border: none;
+            position: relative;
+            /* cursor:text */
+            cursor: pointer;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 6px 6px 10px red, -6px -6px 10px yellow;
+
+        }
+
+        .pick:before {
+            content: '';
+            width: 0;
+            height: 3em;
+            border-radius: 30em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+            transform: 60s ease;
+            display: block;
+            z-index: -1;
+        }
+
+        .pick:hover::before {
+            width: 9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loder"></div>
+    <button class="pick">pick up</button>
+</body>
+
+</html>

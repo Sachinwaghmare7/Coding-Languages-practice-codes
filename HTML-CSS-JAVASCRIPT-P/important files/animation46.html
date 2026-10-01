@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 50vh;
+            width: 50vw;
+            background-color: bisque;
+
+        }
+
+        .items {
+            height: 40px;
+            width: 40px;
+            background-color: red;
+            animation-name: Sachin;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 4;
+            animation-delay: 2s;
+            animation-direction:
+                /* reverse*/
+                alternate-reverse;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes Sachin {
+            from {
+                transform: translateX(0px);
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items">child</div>
+    </div>
+</body>
+
+</html>

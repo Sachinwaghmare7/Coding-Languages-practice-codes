@@ -1,0 +1,65 @@
+<!--this is a inline and block and flex display element file-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 50px;
+            width: 100vw;
+            border: 2px solid black;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            box-shadow: inset -5px -17px 15px 10px #ff000033;
+        }
+
+        p {
+            text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+            margin: 20px;
+        }
+
+
+        nav ol li {
+            list-style: none;
+            margin: 20px;
+            background-color: yellow;
+            border: 2px solid black;
+            justify-content: center;
+            list-style-type: "\1F44D";
+            display: flex;
+        }
+
+        ol {
+            display: flex;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box"> I AM FINE</div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis molestiae modi corporis, natus voluptatem
+        temporibus suscipit quo nolla dolorum neque!
+
+        <!-- this is the index no 25 video file  -->
+    <nav>
+        <ol>
+            <li>name </li>
+            <li>about</li>
+            <li>sign</li>
+        </ol>
+    </nav>
+    </p>
+</body>
+
+</html>

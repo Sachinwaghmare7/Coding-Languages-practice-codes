@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url("C:\Users\Admin\Desktop\PROGRAM FILES\sigma web\images\bg.jpg");
+    margin: auto;
+    height: 80vh;
+    width: 100%;
+    background-size: max(2100px, 100vh);
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0px;
+    align-items: center;
+    z-index: 1;
+
+
+}
+
+.box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    background-color: red;
+    display: flex;
+    max-width: 90vh;
+    height: 20px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    z-index: 1;
+}
+
+.img1 {
+    height: 30px;
+}

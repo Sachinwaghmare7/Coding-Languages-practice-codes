@@ -1,0 +1,33 @@
+
+// // prompt="enter your number"
+// let n=5;
+// let fac = 1;
+
+
+//     if(n==1||n==0){
+//         console.log(+fac)
+//     }
+//     for(let i=1;i<=n;i++){
+//         fac = fac*i;
+
+//     }
+//     console.log(fac)
+
+
+let a = 6
+function factorial(number) {
+    let arr = Array.from(Array(number + 1).keys())
+    console.log(arr.slice(1,))
+    let c = arr.slice(1,).reduce((a, b) => a * b)
+    return c
+
+}
+function facFor(number) {
+    let fac = 1;
+    for (let index = 1; index <= number; index++) {
+        fac = fac * index
+    }
+    return fac
+}
+factorial(a)
+facFor(a)

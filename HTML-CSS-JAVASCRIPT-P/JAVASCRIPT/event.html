@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chaild {
+            background-color: red;
+            padding: 12px;
+            margin: 20px;
+            border: 2px solid black;
+
+        }
+
+        .chaildcontainer {
+            background-color: rgb(0, 255, 21);
+            padding: 12px;
+            margin: 20px;
+
+        }
+
+        .container {
+            background-color: rgb(238, 255, 0);
+            padding: 12px;
+            margin: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="box">click me</div>
+
+    </div>
+    <button id="btn"> change </button>
+    <script src="event.js"></script> -->
+    <div class="container">
+        <section class="chaildcontainer">
+            <div class="chaild"> click me</div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".chaild").addEventListener("click", (e) => {
+            // e.stopPropagation();
+            //alert("you click on chaild");//            
+            console.log(e, e.key, e.keycode)                             //thsi is used to stop the bubling//
+        })
+        document.querySelector(".chaildcontainer").addEventListener("click", () => {
+            alert("you click on childcontainer");
+        })
+        document.querySelector(".container").addEventListener("click", (e) => {
+            alert("welcome");
+        })
+
+
+        function getRandomColor() {
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+        setInterval(() => {
+            document.querySelector(".chaildcontainer").style.background = getRandomColor();
+        }, 1000);
+    </script>
+
+</body>
+
+</html>

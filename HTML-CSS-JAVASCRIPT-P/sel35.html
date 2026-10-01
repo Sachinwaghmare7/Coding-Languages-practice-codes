@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>thi is the selector code</title>
+<style>
+    /*.box:nth-child(2) {
+    background-color: red;
+    }
+    */
+    .boxes * {
+        border:
+            2px solid black;
+        background-color:
+            aqua;
+    }
+
+    .box:nth-child(odd) {
+        background-color:
+            red;
+    }
+
+    .boxes::before {
+        content: "hi sachin welcome in css language";
+    }
+
+    .boxes::after {
+        content: "hello sachin";
+        background-color: blue;
+    }
+
+    ::selection {
+        color: green;
+        background-color: black;
+    }
+
+    .box::first-line {
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">hi i am a first box Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eius
+            aspernatur, similique saepe a vel architecto assumenda eum alias praesentium voluptate fugit unde nulla
+            eaque officiis neque nostrum eos quos, exercitationem in nam quia voluptatum aliquam. Molestiae, dolorem
+            minima. Nulla commodi maxime aperiam repellat. Aliquam quibusdam architecto provident ex molestiae!
+        </div>
+        <div class="box">hi i am second box</div>
+        <div class="box">hi i am third box</div>
+        <div class="box">hi i am fourth box</div>
+        <img src="s.jpg">
+        i<img src="C:\Users\Admin\Desktop/s.jpg" </div>
+</body>
+
+</html>

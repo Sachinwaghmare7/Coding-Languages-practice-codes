@@ -1,0 +1,11 @@
+{
+    "configurations": [
+       
+        {
+            "type": "msedge",
+            "name": "http://192.168.39.127:3000/NETFLIX.html",
+            "request": "launch",
+            "url": "http://192.168.39.127:3000/NETFLIX.html"
+        }
+    ]
+}

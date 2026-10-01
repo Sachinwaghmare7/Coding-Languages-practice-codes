@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bounce challenge 8</title>
+    <style>
+        .container {
+            height: 60vh;
+            width: 90vh;
+            background-color: aqua;
+            position: absolute;
+        }
+
+        .box {
+            height: 90px;
+            width: 90px;
+            
+         border-radius:53px;
+            background-color: red;
+            position: absolute;
+            bottom: 0px;
+            animation: sachin1 3s linear 1s infinite running, sachin2 ease-out 1s;
+        }
+
+        @keyframes sachin1 {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(1000px);
+
+            }
+        }
+
+        @keyframes sachin2 {
+            from {
+                transform: translateY(0px);
+            }
+
+            to {
+                transform: translateY(200px);
+
+            }
+
+        }
+        div>p{
+            text-align:center;
+            top:20%;
+            position:relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"><p>bounce</p></div>
+    </div>
+</body>
+
+</html>
