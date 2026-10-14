@@ -1,7 +1,19 @@
-p {
+.a {
     font-family: "Times New Roman";
+
+
+
+}
+
+.b {
     font-size: 18px;
+}
+
+.c {
     color: red;
+}
+
+.d {
     font-weight: bold;
     font-style: italic;
 }
